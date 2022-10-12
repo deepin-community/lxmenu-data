@@ -1,0 +1,22 @@
+Source: lxmenu-data
+Section: x11
+Priority: optional
+Maintainer: Debian LXDE Maintainers <pkg-lxde-maintainers@lists.alioth.debian.org>
+Uploaders:
+ Andrew Lee (李健秋) <ajqlee@debian.org>,
+ Andriy Grytsenko <andrej@rep.kiev.ua>
+Build-Depends: debhelper (>= 9), autotools-dev, intltool
+Standards-Version: 3.9.8
+Homepage: http://www.lxde.org/
+Vcs-Browser: https://git.lxde.org/gitweb/?p=debian/lxmenu-data.git
+Vcs-Git: https://git.lxde.org/git/debian/lxmenu-data.git
+
+Package: lxmenu-data
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Description: LXDE freedesktop.org menu specification
+ LXMenu-data is a component for the Lightweight X11 Desktop Environment (LXDE).
+ .
+ It contains files required to build desktop menus for LXDE complying to the
+ freedesktop.org menu specification.

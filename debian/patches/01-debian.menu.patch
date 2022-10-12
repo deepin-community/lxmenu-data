@@ -1,0 +1,20 @@
+Add a debian menu, see bug #741247 in BTS.
+
+diff --git a/layout/lxde-applications.menu b/layout/lxde-applications.menu
+index 013957b..e1cfbd2 100644
+--- a/layout/lxde-applications.menu
++++ b/layout/lxde-applications.menu
+@@ -13,6 +13,13 @@
+ 	<!-- Read in overrides and child menus from applications-merged/ -->
+ 	<DefaultMergeDirs/>
+ 
++	<!-- Debian menu -->
++	<Menu>
++		<Name>Debian</Name>
++		<Directory>lxde-debian.directory</Directory>
++		<MergeFile>debian-menu.menu</MergeFile>
++	</Menu>
++
+ 	<!-- Accessories submenu -->
+ 	<Menu>
+ 		<Name>Accessories</Name>
